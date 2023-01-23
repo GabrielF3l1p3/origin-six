@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family= DM+Sans & family = Poppins:wght@700 & display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #0F241D;
+    --primarycolor: #69B99D;
+    --secondcolor: #CCF4E6;
+    --background1: #F9F9F9;
+    --background2: #FFFFFF;
+
+    --title: 'Poppins', sans-serif;
+    --paragrafo: 'DM Sans', sans-serif;
+}
+
+
+
+/* Header -- barra de navegação */
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    padding: 24px;
+    border-bottom: 1px solid lightgray;
+}
+
+header img {
+    margin-left: 100px;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul li {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    list-style: none;
+    margin: auto 16px;
+    padding-bottom: 27px;
+    transition: transform 0.5s;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+    color: var(--primarycolor);
+    border-bottom: 2px solid var(--primarycolor);
+}
+
+/* Inicio -- primeira sessão */
+
+#inicio {
+    background-color: var(--background2);
+    height: 110vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+#inicio img{
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: 50px -50px 3px var(--secondcolor);
+}
+
+div.text {
+    width: 396px;
+}
+
+div.text h1 {
+    font-family: var(--title);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 54px;
+}
+
+div.text h2 {
+    font-family: var(--title);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 54px;
+}
+
+div.text p {
+    color: #767676;
+    font-family: var(--paragrafo);
+    font-size: 18px;
+}
+
+button.primary {
+    background-color: var(--primarycolor);
+    font-family: var(--paragrafo);
+    margin: 24px 0px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: var(--background1);
+}
+
+button.primary:hover{
+    background-color: var(--secondcolor);
+    color: var(--primarycolor);
+}
+
+/* Segunda sessão */
+
+main section:nth-child(2) {
+    height: 110vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+main section:nth-child(2) .sobre-img {
+    position: relative;
+    height: 100%;
+    width: 617px;
+    margin: 0px 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+main section:nth-child(2) img {
+    box-shadow: -200px -40px 3px var(--secondcolor);    
+    width: 575px;
+    height: 412px;
+    left: -46px;
+
+}
+
+
+
+main section:nth-child(2) .text{
+    width: 40rem;
+
+}
+
+main section:nth-child(2) .text p{
+    line-height: 24px;
+    font-size: 16px;
+    text-align: inherit;
+    margin-top: 16px;
+}
+
+/* Terceira sessão */
+
+main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 64px;
+}
+
+.sobre-serviços {
+    text-align: center;
+    width: 523px;
+    margin: 32px 0px;
+}
+
+.sobre-serviços h2 {
+    color: var(--dark);
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.sobre-serviços p {
+    color: var(--dark);
+    font-family: var(--paragrafo);
+    font-size: 18px;
+    text-align: center;
+}
+
+.sobre-serviços p > span {
+    color: var(--primarycolor);
+    font-weight: bold;
+}
+
+.all-services {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+    width: 352px;
+    height: 352px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid var(--primarycolor);
+
+    transition: transform 1s;
+}
+
+.service img {
+    margin: 12px;
+}
+
+.service h3 {
+    color: var(--dark);
+    font-family: var(--title);
+    margin: 12px;
+}
+
+.service p {
+    font-family: var(--paragrafo);
+    width: 256px;
+    color: gray;
+}
+
+.service:hover {
+    transform: scale(1.1);
+}
